@@ -1,0 +1,23 @@
+{
+  "name": "coffield",
+  "version": "1.0.0",
+  "description": "Personal portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulCoffield/coffield.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulCoffield/coffield/issues"
+  },
+  "homepage": "https://github.com/PaulCoffield/coffield#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
