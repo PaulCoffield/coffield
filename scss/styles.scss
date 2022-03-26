@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;700;900&display=swap');
+
+$primary-color: #6b90bc;
+$primary-dark: darken($primary-color, 55%);
+$white: #fff;
+$black: #111;
+$grey: #d3d3d3;
+
+$heading-font: 'Roboto Condensed', sans-serif;
+$body-font: 'Roboto', sans-serif;
+
+/* Body styles */
+
+html {
+	color: $black;
+	font-family: $body-font;
+	font-weight: 300;
+}
+
+body {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+/* Header styles */
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	.branding {
+		padding: 20px 40px;
+
+		p {
+			margin-top: 0px;
+		}
+
+		&__logofont {
+			font-family: $heading-font;
+			font-weight: 900;
+			font-size: 24px;
+			text-transform: uppercase;
+			margin-bottom: 0;
+		}
+
+		&__sub {
+			font-size: 14px;
+		}
+	}
+
+	nav ul {
+		list-style: none;
+
+		li {
+			display: inline-block;
+
+			.header__navlink {
+				font-weight: 400;
+				color: $black;
+				text-decoration: none;
+				margin-right: 16px;
+
+				&:hover {
+					font-weight: 700;
+					border-bottom: 2px solid $primary-dark;
+				}
+			}
+
+			.header__navlink--active {
+				border-bottom: 2px solid $primary-color;
+			}
+		}
+	}
+}
+
+/* Generic main styles */
+
+.hero {
+	background-color: $primary-color;
+	padding: 60px 40px 80px 40px;
+}
+
+.hero h1 {
+	font-family: $heading-font;
+	font-weight: 900;
+	font-size: 48px;
+	color: $white;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+
+.hero-subheading {
+	position: relative;
+	display: inline-block;
+	top: -16px;
+	font-size: 32px;
+	font-weight: 400;
+	color: $primary-dark;
+	text-transform: none;
+}
+
+/* Footer styles */
