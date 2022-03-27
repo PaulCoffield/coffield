@@ -64,3 +64,26 @@ header {
   text-transform: none; }
 
 /* Footer styles */
+footer {
+  padding: 40px;
+  border-bottom: solid 100px #6b90bc; }
+
+/* Home styles */
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto 140px;
+  padding: 40px; }
+
+.services {
+  display: flex;
+  flex-direction: column;
+  width: 280px; }
+
+.clients h3 {
+  text-align: center; }
+
+.client-logos {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px; }
