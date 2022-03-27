@@ -107,6 +107,47 @@ footer {
 	border-bottom: solid 100px $primary-color;
 }
 
+/* GENERIC MOBILE STYLES */
+
+@media screen and (max-width: 768px) {
+	/* Body styles */
+
+	body {
+		margin: 0 auto;
+	}
+
+	/* Header styles */
+
+	header {
+		flex-direction: column;
+
+		.branding {
+			padding: 20px;
+		}
+		nav ul {
+			padding-left: 20px;
+		}
+	}
+
+	/* Generic main styles */
+
+	.hero {
+		background-color: $primary-color;
+		padding: 20px 20px 40px 20px;
+	}
+
+	.hero h1 {
+		font-size: 40px;
+	}
+
+	.hero-subheading {
+		top: -16px;
+		font-size: 24px;
+	}
+}
+
+/* //////////////////// */
+
 /* Home styles */
 
 .services-container {
@@ -131,3 +172,29 @@ footer {
 	justify-content: space-between;
 	padding: 40px;
 }
+
+/* Home styles - mobile */
+@media screen and (max-width: 768px) {
+	.services-container {
+		margin: 40px auto 0px;
+		padding: 20px;
+		flex-direction: column;
+	}
+
+	.services {
+		width: 100%;
+		margin-bottom: 60px;
+	}
+
+	.client-logos {
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+
+		img {
+			max-width: 150px;
+			margin: 10px auto;
+		}
+	}
+}
+/* /////////////////// */
