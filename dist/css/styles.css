@@ -3,7 +3,8 @@
 html {
   color: #111;
   font-family: "Roboto", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  background-color: #f3f3f3; }
 
 body {
   max-width: 980px;
@@ -13,7 +14,8 @@ body {
 header {
   width: 100%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-color: #fff; }
   header .branding {
     padding: 20px 40px; }
     header .branding p {
@@ -43,6 +45,9 @@ header {
         border-bottom: 2px solid #6b90bc; }
 
 /* Generic main styles */
+main {
+  background-color: #fff; }
+
 .hero {
   background-color: #6b90bc;
   padding: 60px 40px 80px 40px; }
@@ -67,6 +72,7 @@ header {
 /* Footer styles */
 footer {
   padding: 40px;
+  background-color: #fff;
   border-bottom: solid 100px #6b90bc; }
 
 /* GENERIC MOBILE STYLES */
@@ -154,5 +160,27 @@ footer {
   display: grid;
   grid-gap: 40px;
   grid-template-columns: 2fr 1fr;
-  margin: 40px auto 100px;
+  margin-top: 40px;
   padding: 40px; }
+
+/* /////////////////// */
+/* About styles - tablet */
+@media screen and (max-width: 600px) {
+  .about-content {
+    grid-template-columns: 1fr; } }
+
+/* //////////////////// */
+/* Work styles */
+.work-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 40px; }
+  .work-container .work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px; }
+    .work-container .work h2,
+    .work-container .work img {
+      grid-column: 1 / span 2; }
+    .work-container .work img {
+      max-width: 100%; }

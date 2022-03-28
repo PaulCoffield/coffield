@@ -4,7 +4,7 @@ $primary-color: #6b90bc;
 $primary-dark: darken($primary-color, 55%);
 $white: #fff;
 $black: #111;
-$grey: #d3d3d3;
+$grey: #f3f3f3;
 
 $heading-font: 'Roboto Condensed', sans-serif;
 $body-font: 'Roboto', sans-serif;
@@ -15,6 +15,7 @@ html {
 	color: $black;
 	font-family: $body-font;
 	font-weight: 300;
+	background-color: $grey;
 }
 
 body {
@@ -28,6 +29,7 @@ header {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	background-color: $white;
 
 	.branding {
 		padding: 20px 40px;
@@ -77,6 +79,10 @@ header {
 
 /* Generic main styles */
 
+main {
+	background-color: $white;
+}
+
 .hero {
 	background-color: $primary-color;
 	padding: 60px 40px 80px 40px;
@@ -105,6 +111,7 @@ header {
 
 footer {
 	padding: 40px;
+	background-color: $white;
 	border-bottom: solid 100px $primary-color;
 }
 
@@ -237,6 +244,36 @@ footer {
 	display: grid;
 	grid-gap: 40px;
 	grid-template-columns: 2fr 1fr;
-	margin: 40px auto 100px;
+	margin-top: 40px;
 	padding: 40px;
+}
+/* /////////////////// */
+
+/* About styles - tablet */
+@media screen and (max-width: 600px) {
+	.about-content {
+		grid-template-columns: 1fr;
+	}
+}
+/* //////////////////// */
+
+/* Work styles */
+.work-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 40px;
+	.work {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-bottom: 40px;
+
+		h2,
+		img {
+			grid-column: 1 / span 2;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
 }
