@@ -174,10 +174,11 @@ footer {
 .work-container {
   display: grid;
   grid-template-columns: 1fr;
+  grid-gap: 40px;
   padding: 40px; }
   .work-container .work {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     margin-bottom: 40px; }
     .work-container .work h2,
     .work-container .work img {
